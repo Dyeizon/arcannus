@@ -1,0 +1,109 @@
+header {
+    background-color: #FFFDFA;
+    height: 100px;
+    display: flex;
+    align-items: center;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.2);
+
+    position: sticky;
+    position: -webkit-sticky;
+}
+
+.h-alignment {
+    display: flex;
+    align-items: center;
+}
+
+.hideMenuIcon {
+    visibility: hidden;
+}
+
+.showMenu {
+    visibility: visible;
+}
+
+.login-icon-button {
+	margin-left: 20px;
+	background-color: transparent;
+    width: 70px;
+    outline: none;
+	border: none;
+}
+
+.login-icon-button:hover {
+    cursor: pointer;
+}
+
+
+.logo-icon-a {
+    margin: 0 auto;
+}
+
+.logo-icon-a img {
+    width: 70px;
+}
+
+.menu-icon-button {
+    height: 100%;
+    background-color: transparent;
+    padding: 12px;
+    border: 2px solid #7a36be;
+    border-radius: 30px;
+}
+
+button {
+    opacity: 0.7;
+    transition: opacity 200ms;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+.search-icon-div {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon-div button {
+    background-color: transparent;
+    border: none;
+}
+
+.search-icon-div input {
+    visibility: hidden;
+    border: 1px solid rgba(122, 54, 190, 0.2);
+    border-radius: 5px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 5px;
+    padding-left: 15px;
+    caret-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(122, 54, 190, 0.1);
+    opacity: 0;
+    transition: opacity 200ms;
+
+    position: absolute;
+    left: -210px;
+}
+
+.search-icon-div input:focus {
+    outline: none;
+}
+
+.displaySearchBar {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* clears the ‘X’ from Internet Explorer */
+input[type=search]::-ms-clear { display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal { display: none; width : 0; height: 0; }
+/* clears the ‘X’ from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
