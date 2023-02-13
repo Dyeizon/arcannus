@@ -2,8 +2,10 @@
 import {MenuIcon} from './icons/MenuIcon.jsx';
 import {LogoIcon} from './icons/LogoIcon.jsx';
 import {LoginIcon} from './icons/LoginIcon.jsx';
+import { SearchIcon } from './icons/SearchIcon.jsx';
 
 import './style.css';
+
 
 export const Header = () => {
   var isMenuActive = false;
@@ -28,7 +30,8 @@ export const Header = () => {
     <div className="container h-alignment">
       {/* <Menu id="menu" className={"menu menuTransitions" + (isMenuActive ? 'showMenu' : '')}/> */}
       <MenuIcon className={isMenuActive ? 'hideMenuIcon' : ''}/>
-      <LogoIcon/>
+      <LogoIcon/> 
+      <SearchIcon/>
       <LoginIcon/>
     </div>
   </header>
