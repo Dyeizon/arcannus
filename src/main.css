@@ -1,0 +1,9 @@
+html {
+    font-size: 67.5%;
+}
+
+.container {
+    width: 90%;
+    max-width: 980px;
+    margin: 0 auto;
+}

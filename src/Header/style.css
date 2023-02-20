@@ -1,3 +1,17 @@
+/* General styles */
+header button {
+    outline-color: transparent;
+    border: none;
+    background-color: transparent;
+
+	opacity: 0.7;
+    transition: opacity 200ms;
+}
+
+header button:hover {
+    opacity: 1;
+}
+
 /* Header */
 header {
     background-color: #FFFDFA;
@@ -12,65 +26,38 @@ header {
     position: -webkit-sticky;
 }
 
-.h-alignment {
+header > .container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 /* Menu */
-.hideMenuIcon {
-    visibility: hidden;
-}
-
-.showMenu {
-    visibility: visible;
-}
-
 .menu-icon-button {
-    height: 100%;
-    background-color: transparent;
     padding: 12px;
     border: 2px solid #7a36be;
-    border-radius: 30px;
+    border-radius: 100%;
+    display: flex;
 }
 
 /* Logo */
-.logo-icon-a {
-    margin: 0 auto;
-}
-
 .logo-icon-a img {
     width: 70px;
 }
 
-/* Search */
-.search-icon-div {
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-
-.hideSearchBar {
-    visibility: hidden;
-    opacity: 0;
-}
-
-.search-input {
-    border: 1px solid rgba(122, 54, 190, 0.2);
-    border-radius: 15px 5px 5px 15px;
-    padding: 5px;
-    padding-left: 10px;
-    margin-right: 10px;
-    caret-color: rgba(0, 0, 0, 0.5);
-    background-color: rgba(122, 54, 190, 0.1);
-
-    position: absolute;
-    left: -210px;
+.logo-icon-button {
+    opacity: 1;
 }
 
 /* Login */
 .login-icon-button {
-	margin-left: 20px;
-    display: flex;
     width: 70px;
+}
+
+/* Media Queries */
+
+@media (max-width: 530px) {
+    .logo-icon-a img {
+        width: 60px;
+    }
 }

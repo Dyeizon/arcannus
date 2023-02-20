@@ -42,24 +42,6 @@ table {
 	border-spacing: 0;
 }
 
-/* General styles */
-button {
-    outline: none;
-    border: none;
-    background-color: transparent;
-
-	opacity: 0.7;
-    transition: opacity 200ms;
-}
-
-button:hover {
-    opacity: 1;
-}
-
-input {
-    outline: none;
-}
-
 /* clears the ‘X’ from Internet Explorer */
 input[type=search]::-ms-clear { display: none; width : 0; height: 0; }
 input[type=search]::-ms-reveal { display: none; width : 0; height: 0; }
