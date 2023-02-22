@@ -1,0 +1,16 @@
+.carousel-section {
+    margin-top: 1px;
+}
+
+.carousel-section *:not(.navigation-buttons, .navigation-buttons *) {
+    height: calc(100vh - var(--header-height) - 1px);
+
+}
+
+.carousel-item {
+    background-size: 100%;
+}
+
+.carousel-item-content {
+    background-color: rgba(0, 0, 0, 0.4);
+}

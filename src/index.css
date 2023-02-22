@@ -11,3 +11,9 @@ html {
     max-width: 980px;
     margin: 0 auto;
 }
+
+:root {
+    --header-height: 100px;
+    --header-border-bottom-height: 1px;
+    --primary-color: #7a36be;
+}

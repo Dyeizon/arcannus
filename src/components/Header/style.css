@@ -15,11 +15,11 @@ header button:hover {
 /* Header */
 header {
     background-color: #FFFDFA;
-    height: 100px;
+    height: var(--header-height);
     display: flex;
     align-items: center;
 
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: var(--header-border-bottom-height) solid rgba(0, 0, 0, 0.2);
     box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.2);
 
     position: sticky;
@@ -35,7 +35,7 @@ header > .container {
 /* Menu */
 .menu-icon-button {
     padding: 12px;
-    border: 2px solid #7a36be;
+    border: 2px solid var(--primary-color);
     border-radius: 100%;
     display: flex;
 }
@@ -51,7 +51,7 @@ header > .container {
 
 /* Login */
 .login-icon-button {
-    width: 70px;
+    width: 52px;
 }
 
 /* Media Queries */
