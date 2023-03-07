@@ -5,14 +5,13 @@ import {LoginIcon} from './icons/LoginIcon.jsx';
 import './style.css';
 
 export const Header = () => {
-
   return (
-  <header className="sticky-top">
-    <div className="container">
-      <MenuIcon/>
-      <LogoIcon/> 
-      <LoginIcon/>
-    </div>
-  </header>
+    <header className="sticky-top">
+      <div className="container">
+        <MenuIcon/>
+        <LogoIcon/> 
+        <LoginIcon/>
+      </div>
+    </header>
   );
 }

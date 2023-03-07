@@ -26,6 +26,7 @@ header {
 
     position: sticky;
     position: -webkit-sticky;
+    z-index: 1 !important;
 }
 
 header > .container {

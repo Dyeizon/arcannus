@@ -1,0 +1,42 @@
+.menu {
+    width: 250px;
+    height: 100vh;
+    background: var(--secondary-color);
+
+    position: fixed;
+    z-index: 2;
+}
+
+.menu .close-area {
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-button:after {
+    display: inline-block;
+    content: "\00d7";
+    font-size: 7rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.menu .list ul {
+    padding: 0;
+}
+
+.menu .list li {
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.menu .list li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.hide-menu {
+    width: 0;
+    visibility: hidden;
+}
