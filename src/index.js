@@ -1,5 +1,5 @@
 import './index.css';
-import 'tw-elements';
+import 'bootstrap/dist/css/bootstrap.css';
 
 import React from 'react';
 import ReactDOM from 'react-dom/client';

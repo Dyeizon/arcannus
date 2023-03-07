@@ -1,16 +1,44 @@
-.carousel-section {
-    margin-top: 1px;
-}
-
-.carousel-section *:not(.navigation-buttons, .navigation-buttons *) {
-    height: calc(100vh - var(--header-height) - 1px);
-
+.carousel-inner, .carousel-item-organizer{
+    height: calc(100vh - var(--header-height));
 }
 
 .carousel-item {
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
 }
 
-.carousel-item-content {
-    background-color: rgba(0, 0, 0, 0.4);
+.carousel-item-organizer {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carousel-item-organizer h2, .carousel-item-organizer h3 {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+.carousel-item-organizer h2 {
+    font-size: 5rem;
+}
+
+.carousel-item-organizer h3 {
+    font-size: 2rem;
+}
+
+.carousel-item-organizer button {
+    padding: 15px;
+    margin-top: 10px;
+    background-color: rgb(0, 128, 0);
+    color: white;
+    font-size: 1.4rem;
+    width: 300px;
+    align-self: center;
+    border-radius: 30px;
 }

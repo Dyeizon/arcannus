@@ -2,8 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
+html, body {
     font-size: 67.5%;
+    font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -16,4 +17,11 @@ html {
     --header-height: 100px;
     --header-border-bottom-height: 1px;
     --primary-color: #7a36be;
+    --secondary-color: #f9d366;
+}
+
+@media (max-width: 980px) {
+    html, body {
+        font-size: 55%;
+    }
 }
