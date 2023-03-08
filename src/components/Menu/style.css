@@ -2,9 +2,11 @@
     width: 250px;
     height: 100vh;
     background: var(--secondary-color);
+    transition: width 300ms ease, visibility 300ms ease;
 
     position: fixed;
     z-index: 2;
+    overflow: hidden;
 }
 
 .menu .close-area {
@@ -30,6 +32,7 @@
     padding: 10px 0;
     text-align: center;
     font-size: 1.6rem;
+    white-space: nowrap;
 }
 
 .menu .list li:hover {

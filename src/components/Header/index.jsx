@@ -7,7 +7,7 @@ import './style.css';
 export const Header = () => {
   return (
     <header className="sticky-top">
-      <div className="container">
+      <div className="header-div">
         <MenuIcon/>
         <LogoIcon/> 
         <LoginIcon/>

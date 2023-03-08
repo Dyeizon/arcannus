@@ -1,19 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 
-/* General styles */
-header button {
-    outline-color: transparent;
-    border: none;
-    background-color: transparent;
-
-	opacity: 0.7;
-    transition: opacity 200ms;
-}
-
-header button:hover {
-    opacity: 1;
-}
-
 /* Header */
 header {
     background-color: #FFFDFA;
@@ -29,10 +15,25 @@ header {
     z-index: 1 !important;
 }
 
-header > .container {
+header button {
+    outline-color: transparent;
+    border: none;
+    background-color: transparent;
+
+	opacity: 0.7;
+    transition: opacity 200ms;
+}
+
+header button:hover {
+    opacity: 1;
+}
+
+header > .header-div {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 85%;
+    margin: 0 auto;
 }
 
 /* Menu */

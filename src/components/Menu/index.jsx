@@ -13,15 +13,15 @@ export const Menu = () => {
             <div className="list">
                 <ul>
                     <ul>
-                        <a href=""><li>Agendar consulta</li></a>
-                        <a href=""><li>Aprendizagem</li></a>
-                        <a href=""><li>Lojinha</li></a>
+                        <a href="/"><li>Agendar consulta</li></a>
+                        <a href="/"><li>Aprendizagem</li></a>
+                        <a href="/"><li>Lojinha</li></a>
                     </ul>
                     <hr/>
                     <ul>
-                        <a href=""><li>Meu arcano</li></a>
-                        <a href=""><li>Carta do dia</li></a>
-                        <a href=""><li>Leituras</li></a>
+                        <a href="/"><li>Meu arcano</li></a>
+                        <a href="/"><li>Carta do dia</li></a>
+                        <a href="/"><li>Leituras</li></a>
                     </ul>
                 </ul>
             </div>
