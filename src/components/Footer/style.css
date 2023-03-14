@@ -3,5 +3,18 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: calc(var(--header-height) / 2);
+    height: var(--footer-height);
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+}
+
+.footer-links > a {
+    margin-right: 16px;
+}
+
+.footer-links > a:last-child {
+    margin-right: 0;
 }

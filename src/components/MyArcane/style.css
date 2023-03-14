@@ -1,0 +1,39 @@
+.myarcane-section > .container {
+    height: 100%;
+}
+
+.date-picker {
+    width: 100%;
+    height: 15%;
+    padding: 20px 50px 0 50px;
+    text-align: center;
+
+}
+
+.myarcane-section .tarot-card {
+    height: 85%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.myarcane-section .tarot-card-img {
+    height: 90%;
+    margin-right: 60px;
+    cursor: pointer;
+    transition: transform 300ms;
+}
+
+.myarcane-section .tarot-card-img:hover {
+    transform: scale(1.02);
+}
+
+.myarcane-section .tarot-card-title {
+    color: gold;
+}
+
+.myarcane-section .tarot-card-desc {
+    font-size: 3rem;
+    text-align: center;
+}

@@ -16,6 +16,11 @@
     justify-content: center;
 }
 
+.close-button {
+    background-color: transparent;
+    border: none;
+}
+
 .close-button:after {
     display: inline-block;
     content: "\00d7";

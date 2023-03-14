@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 html, body {
     font-size: 67.5%;
     font-family: 'Poppins', sans-serif;
@@ -15,9 +11,14 @@ html, body {
 
 :root {
     --header-height: 100px;
+    --footer-height: calc(var(--header-height) / 2);
     --header-border-bottom-height: 1px;
     --primary-color: #7a36be;
     --secondary-color: #f9d366;
+}
+
+.full-section {
+    height: calc(100vh - var(--header-height) - var(--footer-height));
 }
 
 @media (max-width: 980px) {
