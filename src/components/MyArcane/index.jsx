@@ -1,17 +1,29 @@
 import './style.css';
 
-import cardback from './../../assets/img/card-back.jpg';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import DatePicker from 'react-date-picker';
+import {majorarcana} from '../../assets/data/majorarcana';
 
 export const MyArcane = () => {
     const [date, setDate] = useState(new Date());
-    const [arcaneNum, setArcaneNum] = useState(0);
-    const [title, setTitle] = useState('');
+    const [arcaneNum, setArcaneNum] = useState();
+    const [title, setTitle] = useState('Arcano Pessoal');
     const [desc, setDesc] = useState('Insira sua data de nascimento no campo acima, e vire a carta para descobrir seu arcano pessoal');
 
-    useEffect(() => {
-        setTitle(arcaneNum);
+    const cardImageRef = useRef();
+
+    useEffect(() => {        
+        var cardFound = majorarcana.find(element => element.number === arcaneNum);
+        
+        if(cardFound === undefined) {
+            setDesc('Insira sua data de nascimento no campo acima, e vire a carta para descobrir seu arcano pessoal');
+        } else {
+            setTitle(arcaneNum + " - " + cardFound.name);
+            setDesc(cardFound.desc);
+
+            cardImageRef.current.style.backgroundImage = `url(${cardFound.img})`;
+
+        }            
     }, [arcaneNum]);
 
     function getPersonalArcaneNum(birthdate) {
@@ -44,21 +56,17 @@ export const MyArcane = () => {
         setArcaneNum(count);
     }
 
-    function discoverPersonalArcane(birthdate) {
-        getPersonalArcaneNum(birthdate);
-        // setTitle(`[ Arcano ${arcaneNum} ]`);
-    }
-
     return (
         <section className="full-section myarcane-section">
             <div className="container">
                 <DatePicker className="date-picker" onChange={setDate} value={date}/>
                 <div className='tarot-card'>
-                    <img className="tarot-card-img" onClick={()=>discoverPersonalArcane(date)} src={cardback} alt="A Tarot card" />
+                    <div ref={cardImageRef} className="tarot-card-img" onClick={()=>getPersonalArcaneNum(date)} alt="A Tarot card" />
                     <div className='tarot-card-desc'>
-                    <p className='tarot-card-desc-title'>{title}</p>
-                        <p className='tarot-card-desc-p'>{desc}</p>
-
+                        <p className='tarot-card-desc-title'>{title}</p>
+                        <div className="tarot-card-desc-organizer">
+                            <p className='tarot-card-desc-p'>{desc}</p>
+                        </div>
                     </div>
                 </div>
             </div>

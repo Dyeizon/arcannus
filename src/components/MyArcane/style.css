@@ -12,28 +12,51 @@
 
 .myarcane-section .tarot-card {
     height: 85%;
-    width: 70%;
-    display: flex;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     align-items: center;
     margin: 0 auto;
 }
 
 .myarcane-section .tarot-card-img {
     height: 90%;
-    margin-right: 60px;
+    width: 90%;
     cursor: pointer;
     transition: transform 300ms;
+    background-image: url('./../../assets/img/card-back.jpg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .myarcane-section .tarot-card-img:hover {
     transform: scale(1.02);
 }
 
-.myarcane-section .tarot-card-title {
-    color: gold;
+.myarcane-section .tarot-card-desc {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    height: 90%;
 }
 
-.myarcane-section .tarot-card-desc {
-    font-size: 3rem;
+.myarcane-section .tarot-card-desc-title {
+    font-size: 2.2rem;
+    background-color: gold;
     text-align: center;
+    height: 15%;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.myarcane-section .tarot-card-desc-organizer {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 85%;
+}
+
+.myarcane-section .tarot-card-desc-p {
+    font-size: 1.8rem;
+    padding: 1rem 5rem;
+    margin: 0;
 }
