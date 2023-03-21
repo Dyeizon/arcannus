@@ -1,7 +1,7 @@
 import './style.css';
 
 import cardback from './../../assets/img/card-back.jpg';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import DatePicker from 'react-date-picker';
 
 export const MyArcane = () => {
@@ -9,6 +9,10 @@ export const MyArcane = () => {
     const [arcaneNum, setArcaneNum] = useState(0);
     const [title, setTitle] = useState('');
     const [desc, setDesc] = useState('Insira sua data de nascimento no campo acima, e vire a carta para descobrir seu arcano pessoal');
+
+    useEffect(() => {
+        setTitle(arcaneNum);
+    }, [arcaneNum]);
 
     function getPersonalArcaneNum(birthdate) {
         let count = 0;
@@ -42,7 +46,7 @@ export const MyArcane = () => {
 
     function discoverPersonalArcane(birthdate) {
         getPersonalArcaneNum(birthdate);
-        setTitle(`[ Arcano ${arcaneNum} ]`);
+        // setTitle(`[ Arcano ${arcaneNum} ]`);
     }
 
     return (
